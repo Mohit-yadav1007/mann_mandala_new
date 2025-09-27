@@ -286,10 +286,15 @@ const categories: Category[] = [
         products: [
           { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll1.jpeg" },
           { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll2.jpeg" },
-          { name: "", duration: "Duration: 7-10 days", image: "/placeholder.jpg" },
-          { name: "", duration: "Duration: 7-10 days", image: "/placeholder.jpg" },
-          { name: "", duration: "Duration: 7-10 days", image: "/placeholder.jpg" },
-          { name: "", duration: "Duration: 7-10 days", image: "/placeholder.jpg" }
+          { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll3.jpeg" },
+          { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll4.jpeg" },
+          { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll5.jpeg" },
+          { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll6.jpeg" },
+          { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll7.jpeg" },
+          { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll8.jpeg" },
+          { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll9.jpeg" },
+          { name: "", duration: "Duration: 7-10 days", image: "/images/led_lamps/ll10.jpeg" },
+          
         ]
       },
       {
@@ -466,4 +471,5 @@ export default function ProductsPage() {
       />
     </div>
   )
+
 }
