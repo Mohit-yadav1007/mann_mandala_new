@@ -26,7 +26,26 @@ export default function SubNav({ categories, onCategoryClick, activeCategory }: 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Manual scrolling - removed auto-centering behavior
+  // Auto-center active category on mobile
+  useEffect(() => {
+    if (!containerRef.current) return
+    
+    const activeButton = containerRef.current.querySelector(`[data-category="${activeCategory}"]`) as HTMLElement
+    if (activeButton) {
+      const container = containerRef.current
+      const containerWidth = container.offsetWidth
+      const buttonOffsetLeft = activeButton.offsetLeft
+      const buttonWidth = activeButton.offsetWidth
+      
+      // Calculate scroll position to center the button
+      const scrollLeft = buttonOffsetLeft - (containerWidth / 2) + (buttonWidth / 2)
+      
+      container.scrollTo({
+        left: Math.max(0, scrollLeft),
+        behavior: 'smooth'
+      })
+    }
+  }, [activeCategory])
 
   return (
     <div className={`sticky top-[73px] z-40 w-full transition-all duration-300 ${
@@ -37,6 +56,7 @@ export default function SubNav({ categories, onCategoryClick, activeCategory }: 
           {categories.map((category) => (
             <button
               key={category}
+              data-category={category}
               onClick={() => onCategoryClick(category)}
               className={`flex-shrink-0 whitespace-nowrap px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 hover-raise touch-target ${
                 activeCategory === category
