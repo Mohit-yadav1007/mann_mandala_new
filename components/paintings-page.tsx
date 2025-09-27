@@ -40,7 +40,7 @@ const galleryPaintings: Painting[] = [
   { id: 13, title: "Lotus Dot Mandala", image: "/images/painting_page/pp14.jpg" },
   { id: 14, title: "Earthy and serene mandala painting", image: "/images/painting_page/pp15.jpg" },
   { id: 15, title: "Teal and earthy tones", image: "/images/painting_page/pp16.jpg" },
-  { id: 16, title: "Mystical Journey", image: "/images/painting_page/pp17.jp" },
+  { id: 16, title: "Cosmic mandala", image: "/images/painting_page/pp17.jpg" },
   { id: 17, title: " Krishna Mandala painting", image: "/images/painting_page/pp18.jpg" },
   { id: 18, title: "Om (Aum) symbol Mandala", image: "/images/painting_page/pp19.jpg" },
   { id: 19, title: "Krishna Mandala painting", image: "/images/painting_page/pp20.jpg" },
@@ -54,7 +54,7 @@ const galleryPaintings: Painting[] = [
   { id: 27, title: "Joyful hues Mandala painting II", image: "/images/painting_page/pp28.jpg" },
   { id: 28, title: "Radiance Mandala", image: "/images/painting_page/pp29.jpg" },
   { id: 29, title: "Earthy tones Mandala", image: "/images/painting_page/pp30.jpg" },
-  { id: 30, title: "The Flower of life Mandala ", image: "/images/painting_page/pp31.jpg" },
+  { id: 30, title: "The Flower of Life Mandala ", image: "/images/painting_page/pp31.jpg" },
   { id: 31, title: "Tree of Life Mandala", image: "/images/painting_page/pp32.jpg" },
   { id: 32, title: "Spectrum mandala", image: "/images/painting_page/pp33.jpg" }
 ]
